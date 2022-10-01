@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="planespotter.qml">../Qt_application/planespotter.qml</file>
+        <file alias="Plane.qml">../Qt_application/Plane.qml</file>
+        <file alias="airplane.png">../Qt_application/airplane.png</file>
+        <file alias="marker.png">../Qt_application/marker.png</file>
+    </qresource>
+</RCC>

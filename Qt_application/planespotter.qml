@@ -290,7 +290,7 @@ ApplicationWindow {
             anchors.centerIn: parent;
             anchors.fill: parent
             plugin: Plugin {
-                name: "esri" // "mapboxgl", "esri", osm...
+                name: "osm" // "mapboxgl", "esri", osm...
             }
             MapQuickItem {
                 id: marker

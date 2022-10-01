@@ -11,7 +11,7 @@
 import asyncio
 from mavsdk import System
 from concurrent.futures import TimeoutError
-from mavsdk import (Attitude, OffboardError)
+from mavsdk.offboard import (Attitude, OffboardError)
 
 
 async def echo_server(reader, writer, drone):
@@ -124,7 +124,7 @@ async def main(host, port):
     print("Waiting for drone to connect...")
     async for state in drone.core.connection_state():
         if state.is_connected:
-            print(f"Drone discovered with UUID: {state.uuid}")
+            #print(f"Drone discovered with UUID: {state.uuid}")
             break
 
     print("Waiting for drone to have a global position estimate...")

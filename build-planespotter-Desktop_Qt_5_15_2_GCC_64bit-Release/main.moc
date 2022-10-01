@@ -1,0 +1,554 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'main.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <memory>
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'main.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.15.2. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_Worker_t {
+    QByteArrayData data[11];
+    char stringdata0[87];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_Worker_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_Worker_t qt_meta_stringdata_Worker = {
+    {
+QT_MOC_LITERAL(0, 0, 6), // "Worker"
+QT_MOC_LITERAL(1, 7, 11), // "resultReady"
+QT_MOC_LITERAL(2, 19, 0), // ""
+QT_MOC_LITERAL(3, 20, 14), // "QGeoCoordinate"
+QT_MOC_LITERAL(4, 35, 6), // "result"
+QT_MOC_LITERAL(5, 42, 3), // "alt"
+QT_MOC_LITERAL(6, 46, 4), // "batt"
+QT_MOC_LITERAL(7, 51, 8), // "is_armed"
+QT_MOC_LITERAL(8, 60, 10), // "flight_mod"
+QT_MOC_LITERAL(9, 71, 6), // "doWork"
+QT_MOC_LITERAL(10, 78, 8) // "socketFD"
+
+    },
+    "Worker\0resultReady\0\0QGeoCoordinate\0"
+    "result\0alt\0batt\0is_armed\0flight_mod\0"
+    "doWork\0socketFD"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_Worker[] = {
+
+ // content:
+       8,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    5,   24,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       9,    1,   35,    2, 0x0a /* Public */,
+
+ // signals: parameters
+    QMetaType::Void, 0x80000000 | 3, QMetaType::Double, QMetaType::Double, QMetaType::Int, QMetaType::QString,    4,    5,    6,    7,    8,
+
+ // slots: parameters
+    QMetaType::Void, QMetaType::Int,   10,
+
+       0        // eod
+};
+
+void Worker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<Worker *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->resultReady((*reinterpret_cast< const QGeoCoordinate(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2])),(*reinterpret_cast< const double(*)>(_a[3])),(*reinterpret_cast< const int(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
+        case 1: _t->doWork((*reinterpret_cast< const int(*)>(_a[1]))); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 0:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGeoCoordinate >(); break;
+            }
+            break;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (Worker::*)(const QGeoCoordinate & , const double & , const double & , const int & , const QString & );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Worker::resultReady)) {
+                *result = 0;
+                return;
+            }
+        }
+    }
+}
+
+QT_INIT_METAOBJECT const QMetaObject Worker::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_Worker.data,
+    qt_meta_data_Worker,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
+
+
+const QMetaObject *Worker::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *Worker::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_Worker.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int Worker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Worker::resultReady(const QGeoCoordinate & _t1, const double & _t2, const double & _t3, const int & _t4, const QString & _t5)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+struct qt_meta_stringdata_PlaneController_t {
+    QByteArrayData data[41];
+    char stringdata0[462];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_PlaneController_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_PlaneController_t qt_meta_stringdata_PlaneController = {
+    {
+QT_MOC_LITERAL(0, 0, 15), // "PlaneController"
+QT_MOC_LITERAL(1, 16, 15), // "positionChanged"
+QT_MOC_LITERAL(2, 32, 0), // ""
+QT_MOC_LITERAL(3, 33, 7), // "arrived"
+QT_MOC_LITERAL(4, 41, 8), // "departed"
+QT_MOC_LITERAL(5, 50, 9), // "toChanged"
+QT_MOC_LITERAL(6, 60, 11), // "fromChanged"
+QT_MOC_LITERAL(7, 72, 7), // "operate"
+QT_MOC_LITERAL(8, 80, 8), // "socketFD"
+QT_MOC_LITERAL(9, 89, 11), // "startFlight"
+QT_MOC_LITERAL(10, 101, 22), // "updatedCoordinatesSlot"
+QT_MOC_LITERAL(11, 124, 14), // "QGeoCoordinate"
+QT_MOC_LITERAL(12, 139, 8), // "newCoord"
+QT_MOC_LITERAL(13, 148, 11), // "newAltitude"
+QT_MOC_LITERAL(14, 160, 10), // "newBattery"
+QT_MOC_LITERAL(15, 171, 8), // "is_armed"
+QT_MOC_LITERAL(16, 180, 10), // "flight_mod"
+QT_MOC_LITERAL(17, 191, 16), // "swapDestinations"
+QT_MOC_LITERAL(18, 208, 13), // "updateIsArmed"
+QT_MOC_LITERAL(19, 222, 18), // "updateToCoordinate"
+QT_MOC_LITERAL(20, 241, 13), // "newCoordinate"
+QT_MOC_LITERAL(21, 255, 20), // "updateFromCoordinate"
+QT_MOC_LITERAL(22, 276, 14), // "updateAltitude"
+QT_MOC_LITERAL(23, 291, 8), // "altitude"
+QT_MOC_LITERAL(24, 300, 13), // "updateBattery"
+QT_MOC_LITERAL(25, 314, 7), // "battery"
+QT_MOC_LITERAL(26, 322, 16), // "updateFlightMode"
+QT_MOC_LITERAL(27, 339, 21), // "updateCurrentLocation"
+QT_MOC_LITERAL(28, 361, 14), // "batteryVoltage"
+QT_MOC_LITERAL(29, 376, 8), // "isFlying"
+QT_MOC_LITERAL(30, 385, 3), // "arm"
+QT_MOC_LITERAL(31, 389, 6), // "disarm"
+QT_MOC_LITERAL(32, 396, 4), // "kill"
+QT_MOC_LITERAL(33, 401, 7), // "isArmed"
+QT_MOC_LITERAL(34, 409, 10), // "flightMode"
+QT_MOC_LITERAL(35, 420, 7), // "takeoff"
+QT_MOC_LITERAL(36, 428, 4), // "land"
+QT_MOC_LITERAL(37, 433, 11), // "return_home"
+QT_MOC_LITERAL(38, 445, 8), // "position"
+QT_MOC_LITERAL(39, 454, 4), // "from"
+QT_MOC_LITERAL(40, 459, 2) // "to"
+
+    },
+    "PlaneController\0positionChanged\0\0"
+    "arrived\0departed\0toChanged\0fromChanged\0"
+    "operate\0socketFD\0startFlight\0"
+    "updatedCoordinatesSlot\0QGeoCoordinate\0"
+    "newCoord\0newAltitude\0newBattery\0"
+    "is_armed\0flight_mod\0swapDestinations\0"
+    "updateIsArmed\0updateToCoordinate\0"
+    "newCoordinate\0updateFromCoordinate\0"
+    "updateAltitude\0altitude\0updateBattery\0"
+    "battery\0updateFlightMode\0updateCurrentLocation\0"
+    "batteryVoltage\0isFlying\0arm\0disarm\0"
+    "kill\0isArmed\0flightMode\0takeoff\0land\0"
+    "return_home\0position\0from\0to"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_PlaneController[] = {
+
+ // content:
+       8,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      27,   14, // methods
+       3,  198, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       6,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    0,  149,    2, 0x06 /* Public */,
+       3,    0,  150,    2, 0x06 /* Public */,
+       4,    0,  151,    2, 0x06 /* Public */,
+       5,    0,  152,    2, 0x06 /* Public */,
+       6,    0,  153,    2, 0x06 /* Public */,
+       7,    1,  154,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       9,    0,  157,    2, 0x0a /* Public */,
+      10,    5,  158,    2, 0x0a /* Public */,
+      17,    0,  169,    2, 0x0a /* Public */,
+      18,    1,  170,    2, 0x0a /* Public */,
+      19,    1,  173,    2, 0x0a /* Public */,
+      21,    0,  176,    2, 0x0a /* Public */,
+      22,    1,  177,    2, 0x0a /* Public */,
+      24,    1,  180,    2, 0x0a /* Public */,
+      26,    1,  183,    2, 0x0a /* Public */,
+      27,    0,  186,    2, 0x0a /* Public */,
+
+ // methods: name, argc, parameters, tag, flags
+      23,    0,  187,    2, 0x02 /* Public */,
+      28,    0,  188,    2, 0x02 /* Public */,
+      29,    0,  189,    2, 0x02 /* Public */,
+      30,    0,  190,    2, 0x02 /* Public */,
+      31,    0,  191,    2, 0x02 /* Public */,
+      32,    0,  192,    2, 0x02 /* Public */,
+      33,    0,  193,    2, 0x02 /* Public */,
+      34,    0,  194,    2, 0x02 /* Public */,
+      35,    0,  195,    2, 0x02 /* Public */,
+      36,    0,  196,    2, 0x02 /* Public */,
+      37,    0,  197,    2, 0x02 /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    8,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 11, QMetaType::Double, QMetaType::Double, QMetaType::Int, QMetaType::QString,   12,   13,   14,   15,   16,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   15,
+    QMetaType::Void, 0x80000000 | 11,   20,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Double,   23,
+    QMetaType::Void, QMetaType::Double,   25,
+    QMetaType::Void, QMetaType::QString,   16,
+    QMetaType::Void,
+
+ // methods: parameters
+    QMetaType::Double,
+    QMetaType::Double,
+    QMetaType::Bool,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Bool,
+    QMetaType::QString,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+ // properties: name, type, flags
+      38, 0x80000000 | 11, 0x0049510b,
+      39, 0x80000000 | 11, 0x0049510b,
+      40, 0x80000000 | 11, 0x0049510b,
+
+ // properties: notify_signal_id
+       0,
+       4,
+       3,
+
+       0        // eod
+};
+
+void PlaneController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<PlaneController *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->positionChanged(); break;
+        case 1: _t->arrived(); break;
+        case 2: _t->departed(); break;
+        case 3: _t->toChanged(); break;
+        case 4: _t->fromChanged(); break;
+        case 5: _t->operate((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->startFlight(); break;
+        case 7: _t->updatedCoordinatesSlot((*reinterpret_cast< const QGeoCoordinate(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5]))); break;
+        case 8: _t->swapDestinations(); break;
+        case 9: _t->updateIsArmed((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: _t->updateToCoordinate((*reinterpret_cast< QGeoCoordinate(*)>(_a[1]))); break;
+        case 11: _t->updateFromCoordinate(); break;
+        case 12: _t->updateAltitude((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 13: _t->updateBattery((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 14: _t->updateFlightMode((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 15: _t->updateCurrentLocation(); break;
+        case 16: { double _r = _t->altitude();
+            if (_a[0]) *reinterpret_cast< double*>(_a[0]) = std::move(_r); }  break;
+        case 17: { double _r = _t->batteryVoltage();
+            if (_a[0]) *reinterpret_cast< double*>(_a[0]) = std::move(_r); }  break;
+        case 18: { bool _r = _t->isFlying();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 19: _t->arm(); break;
+        case 20: _t->disarm(); break;
+        case 21: _t->kill(); break;
+        case 22: { bool _r = _t->isArmed();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 23: { QString _r = _t->flightMode();
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 24: _t->takeoff(); break;
+        case 25: _t->land(); break;
+        case 26: _t->return_home(); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 7:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGeoCoordinate >(); break;
+            }
+            break;
+        case 10:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGeoCoordinate >(); break;
+            }
+            break;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (PlaneController::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::positionChanged)) {
+                *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (PlaneController::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::arrived)) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (PlaneController::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::departed)) {
+                *result = 2;
+                return;
+            }
+        }
+        {
+            using _t = void (PlaneController::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::toChanged)) {
+                *result = 3;
+                return;
+            }
+        }
+        {
+            using _t = void (PlaneController::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::fromChanged)) {
+                *result = 4;
+                return;
+            }
+        }
+        {
+            using _t = void (PlaneController::*)(int );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PlaneController::operate)) {
+                *result = 5;
+                return;
+            }
+        }
+    } else if (_c == QMetaObject::RegisterPropertyMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 2:
+        case 1:
+        case 0:
+            *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGeoCoordinate >(); break;
+        }
+    }
+
+#ifndef QT_NO_PROPERTIES
+    else if (_c == QMetaObject::ReadProperty) {
+        auto *_t = static_cast<PlaneController *>(_o);
+        Q_UNUSED(_t)
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast< QGeoCoordinate*>(_v) = _t->position(); break;
+        case 1: *reinterpret_cast< QGeoCoordinate*>(_v) = _t->from(); break;
+        case 2: *reinterpret_cast< QGeoCoordinate*>(_v) = _t->to(); break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::WriteProperty) {
+        auto *_t = static_cast<PlaneController *>(_o);
+        Q_UNUSED(_t)
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: _t->setPosition(*reinterpret_cast< QGeoCoordinate*>(_v)); break;
+        case 1: _t->setFrom(*reinterpret_cast< QGeoCoordinate*>(_v)); break;
+        case 2: _t->setTo(*reinterpret_cast< QGeoCoordinate*>(_v)); break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::ResetProperty) {
+    }
+#endif // QT_NO_PROPERTIES
+}
+
+QT_INIT_METAOBJECT const QMetaObject PlaneController::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_PlaneController.data,
+    qt_meta_data_PlaneController,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
+
+
+const QMetaObject *PlaneController::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *PlaneController::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_PlaneController.stringdata0))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int PlaneController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 27)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 27;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 27)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 27;
+    }
+#ifndef QT_NO_PROPERTIES
+    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
+            || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
+        qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyDesignable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyScriptable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyStored) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyEditable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyUser) {
+        _id -= 3;
+    }
+#endif // QT_NO_PROPERTIES
+    return _id;
+}
+
+// SIGNAL 0
+void PlaneController::positionChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void PlaneController::arrived()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void PlaneController::departed()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void PlaneController::toChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void PlaneController::fromChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
+}
+
+// SIGNAL 5
+void PlaneController::operate(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE
